@@ -1,15 +1,15 @@
 {
-    "name": "@ncdesign/slush-nc-angular-gulp",
+    "name": "@ncdesign/slush-ncd",
     "description": "",
     "version": "0.3.0",
-    "homepage": "https://github.com/ndcollins/slush-nc-angular-gulp",
+    "homepage": "https://github.com/ndcollins/slush-ncd",
     "author": {
         "name": "",
         "email": ""
     },
     "repository": {
         "type": "git",
-        "url": "git@github.com:ndcollins/slush-nc-angular-gulp.git"
+        "url": "git@github.com:ndcollins/slush-ncd.git"
     },
     "main": "slushfile.js",
     "engines": {

@@ -1,9 +1,9 @@
 ## Getting Started
 
-Install `slush-nc-angular-gulp` globally:
+Install `slush-ncd` globally:
 
 ```bash
-$ npm install -g slush-nc-angular-gulp
+$ npm install -g slush-ncd
 ```
 
 ### Usage
@@ -11,13 +11,13 @@ $ npm install -g slush-nc-angular-gulp
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-nc-angular-gulp
+$ mkdir my-slush-ncd
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-nc-angular-gulp && slush slush-nc-angular-gulp
+$ cd my-slush-ncd && slush slush-ncd
 ```
 
 ## Getting To Know Slush
