@@ -1,14 +1,14 @@
-# Slush kolyap [![Build Status](https://secure.travis-ci.org/Parikmaher/slush-parikmaher.png?branch=master)](https://travis-ci.org/kolyap/slush-kolyap) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-parikmaher.png)](http://badges.enytc.com/for/npm/slush-kolyap)
+# Slush nc-angular-gulp [![Build Status](https://secure.travis-ci.org/Parikmaher/slush-parikmaher.png?branch=master)](https://travis-ci.org/ndcollins/slush-nc-angular-gulp) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-parikmaher.png)](http://badges.enytc.com/for/npm/slush-nc-angular-gulp)
 
 > 
 
 
 ## Getting Started
 
-Install `slush-kolyap` globally:
+Install `slush-nc-angular-gulp` globally:
 
 ```bash
-$ npm install -g slush-kolyap
+$ npm install -g slush-nc-angular-gulp
 ```
 
 ### Usage
@@ -16,13 +16,13 @@ $ npm install -g slush-kolyap
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-kolyap
+$ mkdir my-slush-nc-angular-gulp
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-kolyap && slush kolyap
+$ cd my-slush-nc-angular-gulp && slush slush-nc-angular-gulp
 ```
 
 ## Getting To Know Slush
