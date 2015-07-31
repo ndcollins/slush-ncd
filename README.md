@@ -1,8 +1,3 @@
-# Slush nc-angular-gulp [![Build Status](https://secure.travis-ci.org/Parikmaher/slush-parikmaher.png?branch=master)](https://travis-ci.org/ndcollins/slush-nc-angular-gulp) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-parikmaher.png)](http://badges.enytc.com/for/npm/slush-nc-angular-gulp)
-
-> 
-
-
 ## Getting Started
 
 Install `slush-nc-angular-gulp` globally:
