@@ -1,6 +1,6 @@
 {
-  "name": "AngularJS-Gulp-Browserify-Starter",
-  "version": "1.2.0",
+  "name": "<%= nameDashed %>",
+  "version": "1.0.0",
   "description": "Base AngularJS application with gulp and browserify",
   "main": "app.js",
   "repository": {

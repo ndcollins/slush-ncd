@@ -31,37 +31,11 @@
                     type: 'list',
                     name: 'csstype',
                     message: 'What CSS preprocessor do you want to use?',
-                    default: 'less',
+                    default: 'sass',
                     choices: [{
-                        name: 'LESS',
-                        value: 'less'
-                    }, {
-                        name: 'Stylus',
-                        value: 'styl'
-                    }, {
                         name: 'Sass',
                         value: 'sass'
                     }]
-                }, {
-                    type: 'confirm',
-                    name: 'middleware',
-                    message: 'Do you want to use middleware for proxy support?',
-                    default: true
-                }, {
-                    type: 'checkbox',
-                    name: 'example',
-                    message: 'Please select the examples that needs to be included:',
-                    choices: [{
-                            name: 'A Simple TODO application to demo the AngularJS',
-                            value: 'todo',
-                            checked: true
-                        },
-                        new inquirer.Separator("These require server side REST calls and it is highly recommended to use the middleware support:"), {
-                            name: 'A Simple example to show how to make server call for non persistance service calls (heat)',
-                            value: 'heat',
-                            checked: true
-                        }
-                    ]
                 }],
 
                 function(answers) {
@@ -75,19 +49,6 @@
                         files.push('!' + __dirname + '/../templates/app/src/app/modules/' + choice + '/**');
                         files.push('!' + __dirname + '/../templates/app/src/app/modules/' + choice);
                     });
-                    /*
-                    { name: 'my-angular-app',
-                      csstype: 'less',
-                      middleware: true,
-                      example: [ 'todo', 'heat', settings: { todo: 'todo', heat: 'heat' } ],
-                      nameDashed: 'my-angular-app',
-                      modulename: 'myAngularApp',
-                      styleData:
-                       { plugin: 'gulp-less',
-                         pluginVersion: '^1.2.3',
-                         pipeCommand: 'g.less()',
-                         extension: 'less' } }
-                     */
                     answers.exampleSettings = {};
                     _.each(answers.example, function(item) {
                         answers.exampleSettings[item] = item;
@@ -97,7 +58,7 @@
                     return gulp.src(files)
                         .pipe(template(answers))
                         .pipe(rename(function(file) {
-                            if (file.extname === '.css') {
+                            if (file.extname === '.sass') {
                                 file.extname = '.' + answers.styleData.extension;
                             } else if (file.basename[0] === '_') {
                                 file.basename = '.' + file.basename.slice(1);
