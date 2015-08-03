@@ -1,0 +1,263 @@
+Searching 5919 files for "/components/"
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/app.js:
+   73                      var exclude = _.xor(examples, answers.example);
+   74                      _.each(exclude, function(choice) {
+   75:                         files.push('!' + __dirname + '/../templates/app/src/app/components/' + choice + '/**');
+   76:                         files.push('!' + __dirname + '/../templates/app/src/app/components/' + choice);
+   77                      });
+   78                      /*
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/constant.js:
+   51                  .pipe(template(answers))
+   52                  .pipe(rename(answers.fileName + '-constant.js'))
+   53:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   54:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   55                  .on('finish', function() {
+   56                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/controller.js:
+   54                      .pipe(template(answers))
+   55                      .pipe(rename(answers.fileName + '-controller.spec.js'))
+   56:                     .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   57:                     .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   58              }
+   59              //Source
+   ..
+   61                  .pipe(template(answers))
+   62                  .pipe(rename(answers.fileName + '-controller.js'))
+   63:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   64:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   65                  .on('finish', function() {
+   66                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/decorator.js:
+   51                  .pipe(template(answers))
+   52                  .pipe(rename(answers.fileName + '-decorator.js'))
+   53:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   54:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   55                  .on('finish', function() {
+   56                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/directive.js:
+   50                  .pipe(template(answers))
+   51                  .pipe(rename(answers.fileName + '-directive.js'))
+   52:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   53:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   54                  .on('finish', function() {
+   55                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/factory.js:
+   51                  .pipe(template(answers))
+   52                  .pipe(rename(answers.fileName + '-factory.js'))
+   53:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   54:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   55                  .on('finish', function() {
+   56                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/filter.js:
+   56                      .pipe(template(answers))
+   57                      .pipe(rename(answers.fileName + '-filter.spec.js'))
+   58:                     .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   59:                     .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   60              }
+   61  
+   ..
+   64                  .pipe(template(answers))
+   65                  .pipe(rename(answers.fileName + '-filter.js'))
+   66:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   67:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   68                  .on('finish', function() {
+   69                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/module.js:
+   53                      .pipe(template(answers))
+   54                      .pipe(rename(answers.module + '-config.js'))
+   55:                     .pipe(conflict(options.base + options.appDir +'/components/'+ answers.module))
+   56:                     .pipe(gulp.dest(options.base + options.appDir +'/components/'+ answers.module))
+   57              }
+   58              if(answers.config.indexOf('routes')>-1) {
+   ..
+   60                      .pipe(template(answers))
+   61                      .pipe(rename(answers.module + '-routes.js'))
+   62:                     .pipe(conflict(options.base + options.appDir +'/components/'+ answers.module))
+   63:                     .pipe(gulp.dest(options.base + options.appDir +'/components/'+ answers.module))
+   64              }
+   65              /* todo(Aquila) check what preprocessor is being used and name files appropriately
+   ..
+   73                  .pipe(template(answers))
+   74                  .pipe(rename(answers.module + '-module.js'))
+   75:                 .pipe(conflict(options.base + options.appDir +'/components/'+ answers.module))
+   76:                 .pipe(gulp.dest(options.base + options.appDir +'/components/'+ answers.module))
+   77                  .on('finish', function() {
+   78                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/provider.js:
+   51                  .pipe(template(answers))
+   52                  .pipe(rename(answers.fileName + '-provider.js'))
+   53:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   54:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   55                  .on('finish', function() {
+   56                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/route.js:
+   51                  .pipe(template(answers))
+   52                  .pipe(rename(answers.fileName + '-route.js'))
+   53:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   54:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   55                  .on('finish', function() {
+   56                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/service.js:
+   51                  .pipe(template(answers))
+   52                  .pipe(rename(answers.fileName + '-service.js'))
+   53:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   54:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   55                  .on('finish', function() {
+   56                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/value.js:
+   51                  .pipe(template(answers))
+   52                  .pipe(rename(answers.fileName + '-value.js'))
+   53:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   54:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   55                  .on('finish', function() {
+   56                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/tasks/view.js:
+   51                  .pipe(template(answers))
+   52                  .pipe(rename(answers.fileName + '-view.html'))
+   53:                 .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
+   54:                 .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+   55                  .on('finish', function() {
+   56                      done();
+
+/Users/ndcollins/Clients/Nick Collins Design/Projects/slush-ncd/test/default.spec.js:
+  108                      gulp.start('default').once('stop', function() {
+  109                          mockGulpDest.assertDestNotContains({
+  110:                             'src/app/components/todo': [
+  111                                  'todo.js',
+  112                                  'todo.html',
+  ...
+  129                      it('should add a module specific template', function(done) {
+  130                          gulp.start('default').once('stop', function() {
+  131:                             mockGulpDest.assertDestContains('src/app/components/todo/todo.html');
+  132                              done();
+  133                          });
+  ...
+  135                      it('should add a module definition file for the Todo module', function(done) {
+  136                          gulp.start('default').once('stop', function() {
+  137:                             mockGulpDest.assertDestContains('src/app/components/todo/todo.js');
+  138                              done();
+  139                          });
+  ...
+  142                          gulp.start('default').once('stop', function() {
+  143                              mockGulpDest.assertDestContains([
+  144:                                 'src/app/components/todo/todo-controller.js',
+  145:                                 'src/app/components/todo/todo-controller.spec.js'
+  146                              ]);
+  147                              done();
+  ...
+  160                              'src/app/app.less',
+  161                              'src/app/styles/_base.less',
+  162:                             'src/app/components/todo/todo.less'
+  163                          ]);
+  164                          done();
+  ...
+  175                              'src/app/app.less',
+  176                              'src/app/styles/_base.less',
+  177:                             'src/app/components/todo/todo.less'
+  178                          ]);
+  179                          done();
+  ...
+  190                              'src/app/app.scss',
+  191                              'src/app/styles/_base.scss',
+  192:                             'src/app/components/todo/todo.scss'
+  193                          ]);
+  194                          done();
+  ...
+  208              it('should put the constant file in the correct directory', function(done) {
+  209                  gulp.start('constant').once('stop', function() {
+  210:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  211                      done();
+  212                  });
+  ...
+  231              it('should put the controller file in the correct directory', function(done) {
+  232                  gulp.start('controller').once('stop', function() {
+  233:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  234                      done();
+  235                  });
+  ...
+  255              it('should put the controller file in the correct directory', function(done) {
+  256                  gulp.start('controller').once('stop', function() {
+  257:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  258                      done();
+  259                  });
+  ...
+  277              it('should put the decorator file in the correct directory', function(done) {
+  278                  gulp.start('decorator').once('stop', function() {
+  279:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  280                      done();
+  281                  });
+  ...
+  299              it('should put the directive file in the correct directory', function(done) {
+  300                  gulp.start('directive').once('stop', function() {
+  301:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  302                      done();
+  303                  });
+  ...
+  321              it('should put the factory file in the correct directory', function(done) {
+  322                  gulp.start('factory').once('stop', function() {
+  323:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  324                      done();
+  325                  });
+  ...
+  343              it('should put the filter file in the correct directory', function(done) {
+  344                  gulp.start('filter').once('stop', function() {
+  345:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  346                      done();
+  347                  });
+  ...
+  365              it('should put the module file in the correct directory', function(done) {
+  366                  gulp.start('module').once('stop', function() {
+  367:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/mymodule');
+  368                      done();
+  369                  });
+  ...
+  387              it('should put the module file in the correct directory', function(done) {
+  388                  gulp.start('module').once('stop', function() {
+  389:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/mymodule');
+  390                      done();
+  391                  });
+  ...
+  409              it('should put the provider file in the correct directory', function(done) {
+  410                  gulp.start('provider').once('stop', function() {
+  411:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  412                      done();
+  413                  });
+  ...
+  431              it('should put the route file in the correct directory', function(done) {
+  432                  gulp.start('route').once('stop', function() {
+  433:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  434                      done();
+  435                  });
+  ...
+  453              it('should put the service file in the correct directory', function(done) {
+  454                  gulp.start('service').once('stop', function() {
+  455:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  456                      done();
+  457                  });
+  ...
+  475              it('should put the value file in the correct directory', function(done) {
+  476                  gulp.start('value').once('stop', function() {
+  477:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  478                      done();
+  479                  });
+  ...
+  497              it('should put the view file in the correct directory', function(done) {
+  498                  gulp.start('view').once('stop', function() {
+  499:                     assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+  500                      done();
+  501                  });
+
+56 matches across 14 files

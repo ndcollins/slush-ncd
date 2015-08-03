@@ -2,7 +2,7 @@
 
 var angular = require('angular');
 
-module.exports = angular.module('myApp',
+module.exports = angular.module('<%= modulename %>',
     [
         require('./common/common.js').name,
         require('./modules').name

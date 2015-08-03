@@ -72,8 +72,8 @@
                     var files = [__dirname + '/../templates/app/**'];
                     var exclude = _.xor(examples, answers.example);
                     _.each(exclude, function(choice) {
-                        files.push('!' + __dirname + '/../templates/app/src/app/components/' + choice + '/**');
-                        files.push('!' + __dirname + '/../templates/app/src/app/components/' + choice);
+                        files.push('!' + __dirname + '/../templates/app/src/app/modules/' + choice + '/**');
+                        files.push('!' + __dirname + '/../templates/app/src/app/modules/' + choice);
                     });
                     /*
                     { name: 'my-angular-app',

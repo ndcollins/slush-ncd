@@ -50,8 +50,8 @@ module.exports = function(gulp) {
             gulp.src(__dirname + '/../templates/view/view.html')
                 .pipe(template(answers))
                 .pipe(rename(answers.fileName + '-view.html'))
-                .pipe(conflict(options.base + options.appDir + '/components/' + answers.module))
-                .pipe(gulp.dest(options.base + options.appDir + '/components/' + answers.module))
+                .pipe(conflict(options.base + options.appDir + '/modules/' + answers.module))
+                .pipe(gulp.dest(options.base + options.appDir + '/modules/' + answers.module))
                 .on('finish', function() {
                     done();
                 });

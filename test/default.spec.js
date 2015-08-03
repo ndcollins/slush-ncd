@@ -107,7 +107,7 @@
                     });
                     gulp.start('default').once('stop', function() {
                         mockGulpDest.assertDestNotContains({
-                            'src/app/components/todo': [
+                            'src/app/modules/todo': [
                                 'todo.js',
                                 'todo.html',
                                 'todo.css',
@@ -128,21 +128,21 @@
                     });
                     it('should add a module specific template', function(done) {
                         gulp.start('default').once('stop', function() {
-                            mockGulpDest.assertDestContains('src/app/components/todo/todo.html');
+                            mockGulpDest.assertDestContains('src/app/modules/todo/todo.html');
                             done();
                         });
                     });
                     it('should add a module definition file for the Todo module', function(done) {
                         gulp.start('default').once('stop', function() {
-                            mockGulpDest.assertDestContains('src/app/components/todo/todo.js');
+                            mockGulpDest.assertDestContains('src/app/modules/todo/todo.js');
                             done();
                         });
                     });
                     it('should add a Todo controller with a corresponding test file', function(done) {
                         gulp.start('default').once('stop', function() {
                             mockGulpDest.assertDestContains([
-                                'src/app/components/todo/todo-controller.js',
-                                'src/app/components/todo/todo-controller.spec.js'
+                                'src/app/modules/todo/todo-controller.js',
+                                'src/app/modules/todo/todo-controller.spec.js'
                             ]);
                             done();
                         });
@@ -159,7 +159,7 @@
                         mockGulpDest.assertDestContains([
                             'src/app/app.less',
                             'src/app/styles/_base.less',
-                            'src/app/components/todo/todo.less'
+                            'src/app/modules/todo/todo.less'
                         ]);
                         done();
                     });
@@ -174,7 +174,7 @@
                         mockGulpDest.assertDestContains([
                             'src/app/app.less',
                             'src/app/styles/_base.less',
-                            'src/app/components/todo/todo.less'
+                            'src/app/modules/todo/todo.less'
                         ]);
                         done();
                     });
@@ -189,7 +189,7 @@
                         mockGulpDest.assertDestContains([
                             'src/app/app.scss',
                             'src/app/styles/_base.scss',
-                            'src/app/components/todo/todo.scss'
+                            'src/app/modules/todo/todo.scss'
                         ]);
                         done();
                     });
@@ -207,7 +207,7 @@
             });
             it('should put the constant file in the correct directory', function(done) {
                 gulp.start('constant').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -230,7 +230,7 @@
             });
             it('should put the controller file in the correct directory', function(done) {
                 gulp.start('controller').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -254,7 +254,7 @@
             });
             it('should put the controller file in the correct directory', function(done) {
                 gulp.start('controller').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -276,7 +276,7 @@
             });
             it('should put the decorator file in the correct directory', function(done) {
                 gulp.start('decorator').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -298,7 +298,7 @@
             });
             it('should put the directive file in the correct directory', function(done) {
                 gulp.start('directive').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -320,7 +320,7 @@
             });
             it('should put the factory file in the correct directory', function(done) {
                 gulp.start('factory').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -342,7 +342,7 @@
             });
             it('should put the filter file in the correct directory', function(done) {
                 gulp.start('filter').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -364,7 +364,7 @@
             });
             it('should put the module file in the correct directory', function(done) {
                 gulp.start('module').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/mymodule');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/mymodule');
                     done();
                 });
             });
@@ -386,7 +386,7 @@
             });
             it('should put the module file in the correct directory', function(done) {
                 gulp.start('module').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/mymodule');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/mymodule');
                     done();
                 });
             });
@@ -408,7 +408,7 @@
             });
             it('should put the provider file in the correct directory', function(done) {
                 gulp.start('provider').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -430,7 +430,7 @@
             });
             it('should put the route file in the correct directory', function(done) {
                 gulp.start('route').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -452,7 +452,7 @@
             });
             it('should put the service file in the correct directory', function(done) {
                 gulp.start('service').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -474,7 +474,7 @@
             });
             it('should put the value file in the correct directory', function(done) {
                 gulp.start('value').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
@@ -496,7 +496,7 @@
             });
             it('should put the view file in the correct directory', function(done) {
                 gulp.start('view').once('stop', function() {
-                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/components/module1');
+                    assert.that(mockGulpDest.basePath()).is.endingWith('src/app/modules/module1');
                     done();
                 });
             });
