@@ -40,7 +40,7 @@
 
                 function(answers) {
                     //Hande for user response
-                    answers.nameDashed = _.slugify(answers.nameApp);
+                    answers.nameDashed = _.slugify(answers.name);
                     answers.modulename = _.camelize(answers.nameDashed);
 
                     var files = [__dirname + '/../templates/app/**'];
@@ -49,12 +49,8 @@
                         files.push('!' + __dirname + '/../templates/app/src/app/modules/' + choice + '/**');
                         files.push('!' + __dirname + '/../templates/app/src/app/modules/' + choice);
                     });
-                    answers.exampleSettings = {};
-                    _.each(answers.example, function(item) {
-                        answers.exampleSettings[item] = item;
-                    });
                     answers.styleData = util.cssTypeData[answers.csstype];
-                    // console.log("ANSWERS:", answers);
+                    console.log("ANSWERS:", answers);
                     return gulp.src(files)
                         .pipe(template(answers))
                         .pipe(rename(function(file) {
