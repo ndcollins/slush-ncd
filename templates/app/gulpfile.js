@@ -47,7 +47,7 @@ var filePath = {
     },
     styles: {
         src: './app/app.sass',
-        watch: ['./app/app.sass', './app/**/*.sass']
+        watch: ['./app/app.sass', './app/**/*.sass', './app/**/*.scss']
     },
     assets: {
         images: {
