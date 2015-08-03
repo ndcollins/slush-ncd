@@ -33,7 +33,11 @@ var filePath = {
         dest: './dist'
     },
     lint: {
-        src: ['./app/*.js', './app/**/*.js']
+        src: [
+            './app/*.js', 
+            './app/**/*.js',
+            '!./app/libs/**/*.js'
+        ]
     },
     browserify: {
         src: './app/app.js',
